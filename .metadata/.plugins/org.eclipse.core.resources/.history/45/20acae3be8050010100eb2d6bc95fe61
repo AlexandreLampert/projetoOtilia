@@ -1,0 +1,17 @@
+package Entregar;
+import java.util.Scanner;
+
+public class Atividade {
+	//5.2 Ler um string e criar outro string a partir desse em ordem inversa de todo o string.  
+	//(usar StringBuilder, append e reverse).
+
+	public static void main(String[] args) {
+		StringBuilder frase = new StringBuilder("tentativa ");		
+		System.out.println(frase);
+		inverter(frase);
+	}
+	public static void inverter (String frase) {
+		frase.append("1 , 2 , 3");
+	}
+
+}

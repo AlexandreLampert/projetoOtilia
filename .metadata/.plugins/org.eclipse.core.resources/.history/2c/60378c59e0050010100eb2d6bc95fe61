@@ -1,0 +1,15 @@
+package Br.edu.unoesc;
+
+public class aula20_03 {
+	public static void main(String[] args) {
+		char[] a = {'a','b','c'};
+		String b = new String("abc");
+
+		if(b.equals(a)){
+			System.out.println("Iguais");
+		} else
+			System.out.println("Diferentes");
+	}
+
+
+}

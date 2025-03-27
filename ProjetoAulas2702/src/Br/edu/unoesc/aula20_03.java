@@ -1,0 +1,9 @@
+package Br.edu.unoesc;
+
+public static String inverterTexto(String texto){
+	StringBuilder construtor=new StringBuilder();
+
+for(int i=0;i<texto.length();i++){construtor.append(texto.charAt(i));}
+
+construtor.reverse();
+
