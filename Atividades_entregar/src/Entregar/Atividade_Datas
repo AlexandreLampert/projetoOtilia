@@ -1,0 +1,31 @@
+
+package Entregar;
+
+import java.time.LocalDate;
+import java.time.Period;
+
+public class Atividade_Datas {
+
+	public class ContaDatas {
+
+		public static void contaTempo(int dia, int mes, int ano) {
+			LocalDate dataAtual = LocalDate.now();
+
+			LocalDate dataFutura = LocalDate.of(ano, mes, dia);
+
+			Period periodo = Period.between(dataAtual, dataFutura);
+
+			if (periodo.isNegative()) {
+				System.out.println("A data já passou!");
+			} else {
+				System.out.printf("Faltam %d anos, %d meses e %d dias para a data %02d/%02d/%d.%n", periodo.getYears(),
+						periodo.getMonths(), periodo.getDays(), dia, mes, ano);
+			}
+		}
+
+		public static void main(String[] args) {
+
+			contaTempo(30, 3, 2025);
+		}
+	}
+}
